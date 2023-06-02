@@ -3,21 +3,21 @@
 	"id": "server-metrics-exporter",
 	"version": "${version}",
 	"name": "Server Metrics Exporter",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Export stats about the server to an external database",
 	"authors": [
-		"Me!"
+		"@danya02"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://example.com/",
+		"sources": "https://github.com/danya02/mcfabric-metrics-exporter"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/server-metrics-exporter/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
-				"value": "ru.danya02.mcmetrics.ExampleMod",
+				"value": "ru.danya02.mcmetrics.MetricsExporterMod",
 				"adapter": "kotlin"
 			}
 		]
@@ -33,6 +33,5 @@
 		"fabric-language-kotlin": ">=1.8.21"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
